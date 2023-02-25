@@ -64,9 +64,9 @@ export const getColorType = (percentage, defColor) => {
   const excellent = (defColor && defColor.excellent) || '#48AE2C';
 
   const res =
-    (percent =< 10 && poor) ||
-    (percent =< 25 && fair) ||
-    (percent =< 50 && good) ||
+    (percent < 10 && poor) ||
+    (percent < 25 && fair) ||
+    (percent < 50 && good) ||
     excellent;
   return res;
 };
